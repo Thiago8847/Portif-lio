@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    
+    --cor1: #191E29;
+    --cor2: #132d46;
+    --cor3: #01c38d;
+    --cor4: #696e79;
+    --cor5: #ffffff;
+    
+
+    /*
+    --cor1: #001449;
+    --cor2: #012677;
+    --cor3: #00b4fc;
+    --cor4: #005bc5;
+    --cor5: #ffffff;
+    */
+
+
+}
+
+
+.social-icons a {
+    font-size: 40px;
+    color: var(--cor5);
+    transition: 0.3s;
+}
+.social-icons a:hover {
+    color: var(--cor3);
+}
+
+
+/* Fundo da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /*background-image: url('../IMG/fundo.png');*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);  
+    background-attachment: fixed; 
+}
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #0e0e0e;
+}
+span {
+    color: var(--cor3);
+}
+
+/* Cabeçalho */
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    background-color: var(--cor1);
+    color: white;
+}
+header img{
+    display: flex;
+    align-items: center; 
+    height: 30px;
+    padding-right: 25px;
+    padding-left: 30px;
+}
+.logo {
+    display: flex;
+    align-items: center; 
+}
+.nav {
+    display: flex;
+    gap: 20px;
+}
+.nav a {
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: white;
+    text-decoration: none;
+    
+}
+.nav a:hover {
+    color: var(--cor3);
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Pagina Inicio */
+#inicio{ 
+    justify-content: center;
+    display: flex;
+    background-image: url(/IMG/fundo-inicio.png);
+    background-color: var(--cor2);
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: left;
+    width: 100%;
+}
+.dados-inicio {
+    width: 600px;
+    padding-right: 30px;
+}
+.inicioOla h1 {
+    font-family: "Poppins", serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--cor5);
+}
+.inicioOla h2 {   
+    font-family: "Poppins", serif;
+    font-size: 70px;
+    font-weight: 550;
+    color: var(--cor5);
+}
+.inicioOla h3 {
+    padding-top: 0;
+    font-family: "Poppins", serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--cor5);
+}
+.inicioEu p{
+    padding-top: 70px;
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: var(--cor5);
+}
+.button {
+    margin-bottom: 45px; 
+    padding: 10px 20px;
+    background: none;
+    color: var(--cor5);
+    border: 2px solid var(--cor3);
+    cursor: pointer;
+    margin-top: 45px;
+    transition: background-color 0.3s ease;
+    font-family: "Poppins", serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+.button a {
+    color: var(--cor5);
+}
+.button:hover {
+    background-color: #008f89;
+}
+.img-inicio img {
+    justify-content: center;
+    width: 400px;
+    transition: transform 0.9s ease-in-out;
+}
+/* ------------------------------------------------------------------- */
+
+/* projetos */
+#projetos {
+    text-align: center;
+    max-width: 100%;
+    display: block;
+    word-wrap: break-word;
+    padding: 80px;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* skils */
+/*  PARTE 1 ///////////////////////// */
+#Skills {
+    height: 600px;
+    background-color: var(--cor1);
+    background-image: url(/IMG/fundo-inicio.png);
+}
+.skills-inicio h1 {
+    font-family: "Poppins", serif;
+    font-size: 32px;
+    font-weight: 400px;
+    padding-top: 40px;
+    color: var(--cor5);
+    text-align: center;
+}
+.skills-inicio p {
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    font-weight: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: var(--cor5);
+    text-align: center;
+}
+.itens1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 35px;
+}
+.itens2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 35px;
+}
+#caixa1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+}
+#caixa2 {
+    height: 150px;
+    width: 300px;
+}
+.caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*  HTML  */
+.html {
+    display: flex; 
+    height: 150px; 
+    align-items: center;
+}
+.html .caixa img {
+    width: 70px;
+    transition: transform 0.6s ease-in-out;
+}
+.html .caixa img:hover {
+    transform: scale(1.1);
+}
+.descrição {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.html h1 {
+    font-family: "Poppins", serif;
+    font-size: 25px;
+    color: white;
+    margin: 0;
+}
+.html h2 {
+    font-family: "Poppins", serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--cor5);
+    margin: 0;
+}
+.html p {
+    font-family: "Poppins", serif;
+    font-size: 12px;
+    font-weight: 100;
+    color: var(--cor5);
+    margin-top: 20px;
+}
+/*  CSS  */
+.css {
+    display: flex; 
+    height: 150px; 
+    align-items: center;
+}
+.css .caixa img {
+    width: 70px;
+    transition: transform 0.6s ease-in-out;
+}
+.css .caixa img:hover {
+    transform: scale(1.1);
+}
+.css h1 {
+    font-family: "Poppins", serif;
+    font-size: 25px;
+    color: white;
+    margin: 0;
+}
+.css h2 {
+    font-family: "Poppins", serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--cor5);
+    margin: 0;
+}
+.css p {
+    font-family: "Poppins", serif;
+    font-size: 12px;
+    font-weight: 100;
+    color: var(--cor5);
+    margin-top: 20px;
+}
+/*  JS  */
+.js {
+    display: flex; 
+    height: 150px; 
+    align-items: center;
+}
+.js .caixa img {
+    width: 70px;
+    transition: transform 0.6s ease-in-out;
+}
+.js .caixa img:hover {
+    transform: scale(1.1);
+}
+.js h1 {
+    font-family: "Poppins", serif;
+    font-size: 25px;
+    color: white;
+    margin: 0;
+}
+.js h2 {
+    font-family: "Poppins", serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--cor5);
+    margin: 0;
+}
+.js p {
+    font-family: "Poppins", serif;
+    font-size: 12px;
+    font-weight: 100;
+    color: var(--cor5);
+    margin-top: 20px;
+}
+
+/*  PARTE 1 ///////////////////////// */
+/*  PYTHON  */
+
+#Skils .itens2 .python {
+    width: 200px;
+    height: 180px;
+    text-align: center;
+    word-wrap: break-word;
+    margin-right: 10px;
+}
+#Skils .itens2 .python img{
+    width: 70px;
+    transition: transform 0.2s ease-in-out;    
+}
+#Skils .itens2 .python img:hover{
+    transform: scale(1.1);
+}
+
+/*  C#  */
+
+#Skils .itens2 .c {
+    width: 200px;
+    height: 180px;
+    text-align: center;
+    word-wrap: break-word;
+    margin-right: 10px;
+}
+#Skils .itens2 .c img{
+    width: 70px;
+    transition: transform 0.2s ease-in-out;    
+}
+#Skils .itens2 .c img:hover{
+    transform: scale(1.1);
+}
+
+/*  C#  */
+
+#Skils .itens2 .php {
+    width: 200px;
+    height: 180px;
+    text-align: center;
+    word-wrap: break-word;
+    margin-right: 10px;
+}
+#Skils .itens2 .php img{
+    width: 70px;
+    transition: transform 0.2s ease-in-out;    
+}
+#Skils .itens2 .php img:hover{
+    transform: scale(1.1);
+}
+
+/*  SQL  */
+
+#Skils .itens2 .sql {
+    width: 200px;
+    height: 180px;
+    text-align: center;
+    word-wrap: break-word;
+    margin-right: 10px;
+}
+#Skils .itens2 .sql img{
+    width: 70px;
+    transition: transform 0.2s ease-in-out;    
+}
+#Skils .itens2 .sql img:hover{
+    transform: scale(1.1);
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Página sobre */
+#sobre{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.caixa1{
+    width: 600px;
+    height: 400px;
+}
+.caixa2{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+}
+#sobre .caixa1 h1 {
+    color: var(--cor3);
+    font-family: "Poppins", serif;
+    font-size: 70px;
+    font-weight: 500;
+}
+#sobre .caixa1 p {
+    padding: 5px;
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+#sobre .caixa2 img{
+    width: 150px;
+    height: auto;
+    max-width: 100%; 
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Página Contato */
+#contato {
+    justify-content: center;
+    background-color: var(--cor2);
+    padding-top: 60px;
+    margin-top: 20px;
+    width: 60%;
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+/* Containers */
+
+#contato .contato1 {
+    width: 600px;
+    height: 600px;
+    align-items: center;
+}
+#contato .contato2 {
+    width: 400px;
+    height: 300px;
+
+}
+
+/* parte 1 */
+
+#contato .contato1 h1 {
+    padding-bottom: 30px;
+    color: var(--cor5);
+    margin-top: 5px;
+    font-family: "Poppins", serif;
+    font-size: 50px;
+}
+#contato .contato1 p {
+    color: var(--cor5);
+    margin: 5px;
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1;
+}
+#contato .contato1 h2 {
+    padding-top: 30px;
+    color: var(--cor5);
+    font-family: "Poppins", serif;
+    font-size: 25px;
+}
+
+/* parte 2 */
+.contato2 h1 {
+    color: var(--cor5);
+    margin-top: 5px;
+    font-family: "Poppins", serif;
+    font-size: 50px;
+    text-align: left;
+}
+.contato2 h2 {
+    color: var(--cor5);
+    font-family: "Poppins", serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+input, textarea {
+    border: none; /* Remove a borda */
+    outline: none; /* Remove o contorno ao focar no campo */
+    color: #1a1a1a;
+    width: 100%;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    background-color: #cfcfcf;
+}
+input::placeholder, textarea::placeholder {
+    color: #5e5d5d;
+    font-size: 12px;
+    text-align: start;
+}
+textarea {
+    height: 120px;
+    resize: none; /* Impede redimensionamento manual */
+}
+/* Botão estilizado */
+.contato2 button {
+    width: 100px;
+    margin-bottom: 12px; 
+    padding: 10px 20px;
+    background: none;
+    color: white;
+    border: 2px solid #00ccbb;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background-color 0.3s ease;
+}
+button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+button:hover {
+    background-color: #008f89;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Rodapé */
+
+.rodape {
+    font-size: 12px;
+    background-color: var(--cor1);
+    color: white; 
+    text-align: center; 
+    padding: 10px; 
+    bottom: 0;
+    width: 100%;
+  }
+
+
+
+
+
+
+
