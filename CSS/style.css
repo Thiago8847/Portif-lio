@@ -442,7 +442,7 @@ header img{
     width: 100%;
     display: flex;
     padding-top: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 70px;
 }
 .caixa1{
     width: 600px;
@@ -606,9 +606,42 @@ button:hover {
     width: 100%;
   }
 
+/* ------------------------------------------------------------------- */
+
+/* Obrigado */
+
+#obrigado{
+    width: 100%;
+    height: 90vh;;
+    background-image: url(/IMG/fundo-inicio.png);
+    background-color: var(--cor2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+}
+.obrigadoOla h1 {
+    padding-top: 20px;
+    font-family: "Poppins", serif;
+    font-size: 60px;
+    color: var(--cor3);
+}
+.obrigadoEu p{
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-size: 30px;
+    font-weight: 200;
+    color: var(--cor5);
+}
 
 
-
-
-
-
+.rodape2 {
+    font-size: 12px;
+    background-color: var(--cor1);
+    color: white; 
+    text-align: center;  
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
