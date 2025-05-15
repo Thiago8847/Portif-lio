@@ -2,31 +2,87 @@
 
 /*Responsivo*/
 /* Ajustes para tablets (até 1024px) */
-@media (max-width: 1024px) {
-  .dados-inicio {
+@media (max-width: 960px) {
+
+ /* ------------------------------------------------------------------- */
+/* Pagina Inicio */
+ #inicio {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 10px;
+}
+.dados-inicio {
     width: 100%;
     padding: 0 20px;
     text-align: center;
-  }
-
-  .img-inicio img {
+}
+.img-inicio img {
     width: 300px;
     margin-top: 20px;
-  }
-
-  .itens1, .itens2 {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-
 }
 
-/* Ajustes para celulares (até 768px) */
+/* ------------------------------------------------------------------- */
+/* skils */
+#Skills {
+    min-height: 800px;
+}
+.skills-inicio p {
+   width: 500px;
+   margin: 0 auto;
+}
+.html, .css, .js {
+    text-align: center;
+  }
+.html img, .css img,  .js img {
+   width: 50px;
+  }
+.html h1, .css h1, .js h1 {
+    font-size: 20px;
+  }
+.html h2, .css h2, .js h2 {
+    font-size: 16px;
+  }
+.html p, .css p, .js p {
+    font-size: 10px;
+  }
+.todos_itens {
+    flex-direction: column;
+    gap: 0px;
+  }  
+.itens1, .itens2, .itens3 {
+   margin: 0 auto;
+}
+}
+/* ------------------------------------------------------------------- */
+
+/* Página sobre */
+#sobre {
+    flex-direction: column; 
+    padding: 20px;
+  }
+.caixa1, .caixa2 {
+    width: 100%;
+  }
+#sobre .caixa2 img {
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+#sobre .caixa1 h1 {
+    text-align: center;
+    font-size: 40px;
+}
+#sobre .caixa1 p {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* Ajustes para celulares (até 768px) 
 @media (max-width: 768px) {
   #inicio {
     flex-direction: column;
@@ -47,7 +103,12 @@
   .inicioOla h3 {
     font-size: 22px;
   }
-
+#Skills {
+    height: 800px
+    border: 4px solid var(--cor3);
+    background-color: var(--cor1);
+    background-image: url(/IMG/fundo-inicio.png);
+}
   .skills-inicio h1,
   .skills-inicio p {
     padding: 20px;
@@ -70,9 +131,11 @@
   .social-icons a {
     font-size: 30px;
   }
+        
+
 }
 
-/* Ajustes para celulares menores (até 480px) */
+/* Ajustes para celulares menores (até 480px) 
 @media (max-width: 480px) {
   .inicioOla h1 {
     font-size: 24px;
@@ -101,9 +164,14 @@
   #foto-sobre {
     width: 100%;
   }
+  .img-inicio {
+    display: none;  
+}
+  
 
 
 }
+
 /*Raiz*/
 :root {
     
@@ -177,7 +245,6 @@ span {
 /* Cabeçalho */
 
 header {
-    width: 100%;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -296,7 +363,6 @@ header img{
 /* skils */
 /*  PARTE 1 ///////////////////////// */
 #Skills {
-    height: 600px;
     background-color: var(--cor1);
     background-image: url(/IMG/fundo-inicio.png);
 }
@@ -317,19 +383,20 @@ header img{
     color: var(--cor5);
     text-align: center;
 }
-.itens1 {
+.todos_itens{
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
+    align-items: flex-start;
     gap: 35px;
+    flex-wrap: wrap;
 }
-.itens2 {
+.itens1, .itens2, .itens3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 40%;
     gap: 35px;
+    
 }
 #caixa1 {
     display: flex;
@@ -383,7 +450,7 @@ header img{
     font-size: 12px;
     font-weight: 100;
     color: var(--cor5);
-    margin-top: 20px;
+    margin-top: 0px;
 }
 /*  CSS  */
 .css {
@@ -452,95 +519,27 @@ header img{
     margin-top: 20px;
 }
 
-/*  PARTE 1 ///////////////////////// */
-/*  PYTHON  */
-
-#Skils .itens2 .python {
-    width: 200px;
-    height: 180px;
-    text-align: center;
-    word-wrap: break-word;
-    margin-right: 10px;
-}
-#Skils .itens2 .python img{
-    width: 70px;
-    transition: transform 0.2s ease-in-out;    
-}
-#Skils .itens2 .python img:hover{
-    transform: scale(1.1);
-}
-
-/*  C#  */
-
-#Skils .itens2 .c {
-    width: 200px;
-    height: 180px;
-    text-align: center;
-    word-wrap: break-word;
-    margin-right: 10px;
-}
-#Skils .itens2 .c img{
-    width: 70px;
-    transition: transform 0.2s ease-in-out;    
-}
-#Skils .itens2 .c img:hover{
-    transform: scale(1.1);
-}
-
-/*  C#  */
-
-#Skils .itens2 .php {
-    width: 200px;
-    height: 180px;
-    text-align: center;
-    word-wrap: break-word;
-    margin-right: 10px;
-}
-#Skils .itens2 .php img{
-    width: 70px;
-    transition: transform 0.2s ease-in-out;    
-}
-#Skils .itens2 .php img:hover{
-    transform: scale(1.1);
-}
-
-/*  SQL  */
-
-#Skils .itens2 .sql {
-    width: 200px;
-    height: 180px;
-    text-align: center;
-    word-wrap: break-word;
-    margin-right: 10px;
-}
-#Skils .itens2 .sql img{
-    width: 70px;
-    transition: transform 0.2s ease-in-out;    
-}
-#Skils .itens2 .sql img:hover{
-    transform: scale(1.1);
-}
 
 /* ------------------------------------------------------------------- */
 
 /* Página sobre */
-#sobre{
+#sobre {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row; 
     justify-content: center;
-    width: 100%;
-    display: flex;
-    padding-top: 40px;
-    padding-bottom: 0px;
+    align-items: center; 
+    gap: 20px;
+    padding: 40px;
 }
-.caixa1{
-    width: 600px;
-    height: 400px;
+.caixa1 {
+    width: 50%; 
+    height: auto; 
 }
-.caixa2{
-    width: 500px;
-    height: 400px;
-    display: flex;
-    justify-content: center;  
-    align-items: center;     
+.caixa2 {
+    text-align: center;
+    width: 35%; 
+    height: auto; 
 }
 #sobre .caixa1 h1 {
     color: var(--cor3);
@@ -549,6 +548,7 @@ header img{
     font-weight: 500;
 }
 #sobre .caixa1 p {
+    text-align: left;
     padding: 5px;
     font-family: "Poppins", serif;
     font-size: 15px;
@@ -559,6 +559,7 @@ header img{
     font-weight: bold;
 }
 #sobre .caixa2 img{
+    margin-top: 60px;
     width: 350px;
     height: auto;
     max-width: 100%; 
