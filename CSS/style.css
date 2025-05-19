@@ -26,6 +26,8 @@
 /* skils */
 #Skills {
     min-height: 800px;
+    padding-bottom: 0px;
+    
 }
 .skills-inicio p {
    width: 500px;
@@ -53,7 +55,7 @@
 .itens1, .itens2, .itens3 {
    margin: 0 auto;
 }
-}
+
 /* ------------------------------------------------------------------- */
 
 /* Página sobre */
@@ -80,97 +82,97 @@
     text-align: center;
     font-size: 14px;
 }
+}
+/* Ajustes para dispositivos móveis (até 480px) */
+@media (max-width: 480px) {
 
+  /* Cabeçalho */
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-/* Ajustes para celulares (até 768px) 
-@media (max-width: 768px) {
+  /* Página Início */
   #inicio {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 40px 10px;
+    padding: 30px 10px;
   }
-
-  .button {
-    font-size: 16px;
-    padding: 8px 16px;
+  .dados-inicio {
+    width: 100%;
+    padding: 0;
   }
-
+  .img-inicio img {
+    width: 250px;
+    margin-top: 20px;
+  }
   .inicioOla h2 {
     font-size: 40px;
   }
-
   .inicioOla h3 {
     font-size: 22px;
   }
-#Skills {
-    height: 800px
-    border: 4px solid var(--cor3);
-    background-color: var(--cor1);
-    background-image: url(/IMG/fundo-inicio.png);
-}
-  .skills-inicio h1,
+
+  /* Skills */
   .skills-inicio p {
-    padding: 20px;
+    width: 90%;
+    font-size: 12px;
+  }
+  .html, .css, .js {
+    flex-direction: column;
+    height: auto;
+  }
+  .html img, .css img, .js img {
+    width: 40px;
   }
 
-  .contato1, .contato2 {
-    width: 100%;
-    padding: 10px;
+  /* Sobre */
+  #sobre {
+    flex-direction: column;
+    padding: 20px 10px;
   }
-
-  .nav a {
-    font-size: 16px;
-    padding: 10px 0;
-  }
-
-  .img-inicio img {
-    width: 250px;
-  }
-
-  .social-icons a {
-    font-size: 30px;
-  }
-        
-
-}
-
-/* Ajustes para celulares menores (até 480px) 
-@media (max-width: 480px) {
-  .inicioOla h1 {
-    font-size: 24px;
-  }
-
-  .inicioOla h2 {
+  .caixa1 h1 {
     font-size: 32px;
   }
-
-  .inicioOla h3 {
-    font-size: 18px;
+  .caixa1 p {
+    font-size: 13px;
   }
-
-  .inicioEu p {
-    font-size: 14px;
-  }
-
-  .button {
+  .caixa2 img {
     width: 100%;
   }
 
-  .img-inicio img {
-    width: 200px;
+  /* Contato */
+  #contato {
+    flex-direction: column;
+    padding: 20px 10px;
   }
-
-  #foto-sobre {
+  #contato .contato1, 
+  #contato .contato2 {
     width: 100%;
+    height: auto;
   }
-  .img-inicio {
-    display: none;  
+  #contato .contato1 h1,
+  .contato2 h1 {
+    font-size: 30px;
+  }
+
+  /* Obrigado */
+  .obrigadoOla h1 {
+    font-size: 36px;
+  }
+  .obrigadoEu p {
+    font-size: 20px;
+  }
 }
-  
 
 
-}
+
+
 
 /*Raiz*/
 :root {
@@ -365,6 +367,7 @@ header img{
 #Skills {
     background-color: var(--cor1);
     background-image: url(/IMG/fundo-inicio.png);
+    padding-bottom: 40px;
 }
 .skills-inicio h1 {
     font-family: "Poppins", serif;
