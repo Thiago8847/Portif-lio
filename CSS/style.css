@@ -608,7 +608,7 @@ button:hover {
 
 /*--------------------------CABEÇALHO*/
 header {
-    padding: 15px 15px;
+    padding: 10px 10px;
     background-color: var(--cor1);
     color: white;
 }
@@ -617,8 +617,13 @@ header {
     align-items: center; 
 }
 .logo img {
-    height: 30px;
-    padding-right: 25px;
+    height: 20px;
+    padding-right: 15px;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
 .menu a {
     font-family: "Poppins", serif;
