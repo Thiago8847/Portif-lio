@@ -180,20 +180,17 @@ header {
     background-color: #000000;
     text-align: center;
 }
-
 #projetos h2 {
   font-size: 2.2rem;
   margin-bottom: 10px;
   color: var(--cor3);
 }
-
 #projetos .descricao {
   font-size: 1rem;
   color: #ffffff;
   max-width: 700px;
   margin: 0 auto 40px;
 }
-
 /* Cards de projetos */
 .cards-projetos {
   display: flex;
@@ -201,7 +198,6 @@ header {
   gap: 20px;
   flex-wrap: wrap;
 }
-
 .card {
   background: white;
   border-radius: 10px;
@@ -212,29 +208,24 @@ header {
   padding: 20px;
   transition: transform 0.3s;
 }
-
 .card:hover {
   transform: translateY(-5px);
 }
-
 .card img {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 15px;
 }
-
 .card h3 {
   font-size: 1.2rem;
   color: var(--cor1);
   margin-bottom: 10px;
 }
-
 .card p {
   font-size: 0.95rem;
   color: #444;
   margin-bottom: 15px;
 }
-
 .btn-card {
   display: inline-block;
   padding: 8px 16px;
@@ -245,16 +236,13 @@ header {
   font-size: 0.9rem;
   transition: background 0.3s;
 }
-
 .btn-card:hover {
   background: var(--cor3);
 }
-
 /* Botão final */
 .btn-mais-projetos {
   margin-top: 40px;
 }
-
 .btn-mais-projetos .button {
   padding: 12px 24px;
   font-size: 1rem;
@@ -267,161 +255,66 @@ header {
 #Skills {
     background-color: var(--cor1);
     background-image: url(/IMG/fundo-inicio.png);
-    padding-bottom: 40px;
+    padding: 60px 10%;
 }
 .skills-inicio h1 {
     font-family: "Poppins", serif;
-    font-size: 32px;
+    font-size: 42px;
     font-weight: 400px;
-    padding-top: 40px;
-    color: var(--cor5);
     text-align: center;
+    margin-bottom: 15px;
+    color: var(--cor5);
+    
 }
 .skills-inicio p {
     font-family: "Poppins", serif;
     font-size: 16px;
     font-weight: 300px;
-    padding-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
     padding-bottom: 40px;
     color: var(--cor5);
-    text-align: center;
+    
 }
 .todos_itens{
     display: flex;
+    flex-wrap: wrap;  
     justify-content: center;
-    align-items: flex-start;
-    gap: 35px;
-    flex-wrap: wrap;
+    gap: 30px;
 }
-.itens1, .itens2, .itens3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    gap: 35px;
-    
+.skill-item { 
+    border-radius: 12px;
+    background-color: rgba(32, 32, 32, 0.5);   
+    flex: 1 1 250px;         
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    transition: box-shadow 0.6s ease;
 }
-#caixa1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0px 12px var(--cor3);
 }
-#caixa2 {
-    height: 150px;
-    width: 300px;
+.skill-logo img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
 }
-.caixa {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.skill-descricao h2 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  color: var(--cor3);
 }
-/*  HTML  */
-.html {
-    display: flex; 
-    height: 150px; 
-    align-items: center;
+.skill-descricao h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color:var(--cor5);
 }
-.html .caixa img {
-    width: 70px;
-    transition: transform 0.6s ease-in-out;
+.skill-descricao p {
+  font-size: 0.85rem;
+  color: var(--cor5);
 }
-.html .caixa img:hover {
-    transform: scale(1.1);
-}
-.descrição {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-.html h1 {
-    font-family: "Poppins", serif;
-    font-size: 25px;
-    color: white;
-    margin: 0;
-}
-.html h2 {
-    font-family: "Poppins", serif;
-    font-size: 18px;
-    font-weight: 300;
-    color: var(--cor5);
-    margin: 0;
-}
-.html p {
-    font-family: "Poppins", serif;
-    font-size: 12px;
-    font-weight: 100;
-    color: var(--cor5);
-    margin-top: 0px;
-}
-/*  CSS  */
-.css {
-    display: flex; 
-    height: 150px; 
-    align-items: center;
-}
-.css .caixa img {
-    width: 70px;
-    transition: transform 0.6s ease-in-out;
-}
-.css .caixa img:hover {
-    transform: scale(1.1);
-}
-.css h1 {
-    font-family: "Poppins", serif;
-    font-size: 25px;
-    color: white;
-    margin: 0;
-}
-.css h2 {
-    font-family: "Poppins", serif;
-    font-size: 18px;
-    font-weight: 300;
-    color: var(--cor5);
-    margin: 0;
-}
-.css p {
-    font-family: "Poppins", serif;
-    font-size: 12px;
-    font-weight: 100;
-    color: var(--cor5);
-    margin-top: 20px;
-}
-/*  JS  */
-.js {
-    display: flex; 
-    height: 150px; 
-    align-items: center;
-}
-.js .caixa img {
-    width: 70px;
-    transition: transform 0.6s ease-in-out;
-}
-.js .caixa img:hover {
-    transform: scale(1.1);
-}
-.js h1 {
-    font-family: "Poppins", serif;
-    font-size: 25px;
-    color: white;
-    margin: 0;
-}
-.js h2 {
-    font-family: "Poppins", serif;
-    font-size: 18px;
-    font-weight: 300;
-    color: var(--cor5);
-    margin: 0;
-}
-.js p {
-    font-family: "Poppins", serif;
-    font-size: 12px;
-    font-weight: 100;
-    color: var(--cor5);
-    margin-top: 20px;
-}
-
 
 /* ------------------------------------------------------------------- */
 
