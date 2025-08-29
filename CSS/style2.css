@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Fundo da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('../IMG/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);  
+    background-attachment: fixed; 
+}
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+  }
+
+/* Estilização do conteúdo principal */
+.content {
+    margin-top: 20px;
+    margin-left: 170px;
+    padding: 20px;
+    color: white;
+}
+
+/* Barra lateral */
+#sidebar {
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(19, 19, 19);
+    height: 100%;
+    padding-top: 0px;
+    border-radius: 0 30px 30px 0;
+}
+#img-logo {
+    width: 100%; 
+    height: auto; 
+    border-radius: 0 30px 0 30px; 
+    object-fit: contain; 
+}
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+li a {
+    color: inherit; /* Para manter a cor do link igual à cor do texto */
+    text-decoration: none;
+}
+#sidebar ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.358);
+    transition: color 0.3s ease;
+}
+#sidebar ul li:hover {
+    background-color: rgb(30, 30, 30);
+    color: #00ccbb;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Pagina Inicio */
+#inicio {
+    /*background-color: #008f89;*/
+    max-width: 800px;
+    display: block;
+    word-wrap: break-word;
+}
+
+.inicioOla {
+    margin-bottom: 70px; 
+}
+
+.inicioOla p {
+    font-family: "Poppins", serif;
+    font-size: 30px;
+    font-weight: 550;
+    line-height: 1;
+}
+
+.inicioOla h1 {
+    margin-top: 0;    /* Remove o espaço acima do parágrafo */
+    margin-bottom: 0; /* Remove o espaço abaixo do parágrafo */
+    margin: 5px 0;
+    font-family: "Poppins", serif;
+    font-size: 70px;
+    font-weight: 550;
+    line-height: 1;
+}
+
+.inicioOla h3 {
+    margin-top: 20px;    /* Remove o espaço acima do parágrafo */
+    margin-bottom: 0; /* Remove o espaço abaixo do parágrafo */
+    margin: 5px 0;
+    font-family: "Poppins", serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+span {
+    color: #00ccbb;
+}
+
+.inicioEu p{
+    margin-top: 0;    /* Remove o espaço acima do parágrafo */
+    margin-bottom: 0; /* Remove o espaço abaixo do parágrafo */
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.button {
+    margin-bottom: 45px; 
+    padding: 10px 20px;
+    background: none;
+    color: white;
+    border: 2px solid #00ccbb;
+    cursor: pointer;
+    margin-top: 45px;
+    transition: background-color 0.3s ease;
+}
+
+.button a {
+    font-family: "Poppins", serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #008f89;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* skils */
+#Skils {
+    /*background-color: #008f89;*/
+    width: 100%;
+    word-wrap: break-word;
+}
+
+#Skils h1 {
+    font-family: "Poppins", serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#Skils p {
+    font-family: "Poppins", serif;
+    font-size: 18px;
+    font-weight: 200;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#Skils .itens1 {
+    background-color: #0e0e0e;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#Skils .itens2 {
+    background-color: #0e0e0e;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/*  PARTE 1 ///////////////////////// */
+/*  HTML */
+
+#Skils .itens1 .html h1 {
+    font-family: "Poppins", serif;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+#Skils .itens1 .html p {
+    font-family: "Poppins", serif;
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#Skils .itens1 .html {
+   /* background-color: #008f89; */
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    word-wrap: break-word;
+    margin-right: 10px;
+}
+
+#Skils .itens1 .html img{
+    width: 100px;
+    transition: transform 0.2s ease-in-out;   
+}
+
+#Skils .itens1 .html img:hover{
+    transform: scale(1.1);
+}
+
+/*  CSS  */
+
+#Skils .itens1 .css h1 {
+    font-family: "Poppins", serif;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+#Skils .itens1 .css p {
+    font-family: "Poppins", serif;
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#Skils .itens1 .css {
+   /* background-color: #008f89; */
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    word-wrap: break-word;
+    margin-right: 10px;
+}
+
+#Skils .itens1 .css img{
+    width: 100px;
+    transition: transform 0.2s ease-in-out;    
+}
+
+#Skils .itens1 .css img:hover{
+    transform: scale(1.1);
+}
+
+/*  JS  */
+
+#Skils .itens1 .js h1 {
+    font-family: "Poppins", serif;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+#Skils .itens1 .js p {
+    font-family: "Poppins", serif;
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#Skils .itens1 .js {
+   /* background-color: #008f89; */
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    word-wrap: break-word;
+    margin-right: 10px;
+}
+
+#Skils .itens1 .js img{
+    width: 100px;
+    transition: transform 0.2s ease-in-out;    
+}
+
+#Skils .itens1 .js img:hover{
+    transform: scale(1.1);
+}
+
+/*  PARTE 1 ///////////////////////// */
+/*  PYTHON  */
+
+#Skils .itens2 .python {
+    width: 200px;
+    height: 180px;
+    text-align: center;
+    word-wrap: break-word;
+    margin-right: 10px;
+}
+
+#Skils .itens2 .python img{
+    width: 70px;
+    transition: transform 0.2s ease-in-out;    
+}
+
+#Skils .itens2 .python img:hover{
+    transform: scale(1.1);
+}
+
+/*  C#  */
+
+#Skils .itens2 .c {
+    width: 200px;
+    height: 180px;
+    text-align: center;
+    word-wrap: break-word;
+    margin-right: 10px;
+}
+
+#Skils .itens2 .c img{
+    width: 70px;
+    transition: transform 0.2s ease-in-out;    
+}
+
+#Skils .itens2 .c img:hover{
+    transform: scale(1.1);
+}
+
+/*  C#  */
+
+#Skils .itens2 .php {
+    width: 200px;
+    height: 180px;
+    text-align: center;
+    word-wrap: break-word;
+    margin-right: 10px;
+}
+
+#Skils .itens2 .php img{
+    width: 70px;
+    transition: transform 0.2s ease-in-out;    
+}
+
+#Skils .itens2 .php img:hover{
+    transform: scale(1.1);
+}
+
+/*  SQL  */
+
+#Skils .itens2 .sql {
+    width: 200px;
+    height: 180px;
+    text-align: center;
+    word-wrap: break-word;
+    margin-right: 10px;
+}
+
+#Skils .itens2 .sql img{
+    width: 70px;
+    transition: transform 0.2s ease-in-out;    
+}
+
+#Skils .itens2 .sql img:hover{
+    transform: scale(1.1);
+}
+/* ------------------------------------------------------------------- */
+
+/* projetos */
+#projetos {
+    /*background-color: #008f89;*/
+    max-width: 500px;
+    display: block;
+    word-wrap: break-word;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Certificados */
+#certificados {
+    /*background-color: #008f89;*/
+    max-width: 500px;
+    display: block;
+    word-wrap: break-word;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Página sobre */
+#sobre{
+    /*background-color: #008f89;*/
+    width: 100%;
+    display: flex;
+}
+
+#sobre .caixa1{
+    width: 900px;
+    height: 600px;
+}
+
+#sobre .caixa2{
+    width: 900px;
+    height: 600px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+}
+
+#sobre .caixa1 h1 {
+    font-family: "Poppins", serif;
+    font-size: 70px;
+    font-weight: 550;
+}
+
+#sobre .caixa1 p {
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+#sobre .caixa2 img{
+    width: 150px;
+    height: auto;
+    max-width: 100%; 
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Página Contato */
+#contato {
+    /*background-color: #008f89;*/
+    padding-top: 60px;
+    margin-top: 20px;
+    width: 60%;
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+/* Containers */
+
+#contato .contato1 {
+    width: 600px;
+    height: 600px;
+    align-items: center;
+}
+
+#contato .contato2 {
+    width: 400px;
+    height: 300px;
+
+}
+
+/* parte 1 */
+
+#contato .contato1 h1 {
+    margin-top: 5px;
+    font-family: "Poppins", serif;
+    font-size: 50px;
+}
+
+#contato .contato1 p {
+    margin: 5px;
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1;
+}
+
+#contato .contato1 h2 {
+    font-family: "Poppins", serif;
+    font-size: 25px;
+}
+
+.social-icons a {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.contatoEmail {
+    padding-top: 30px;
+}
+
+.contatoEmail p {
+    font-family: "Poppins", serif;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.social-icons a:hover {
+    color: #00ccbb;
+}
+
+/* parte 2 */
+
+.contato2 h2 {
+    color: #ffffff;
+    font-family: "Poppins", serif;
+    font-size: 35px;
+    font-weight: 550;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input, textarea {
+    border: none; /* Remove a borda */
+    outline: none; /* Remove o contorno ao focar no campo */
+    color: #1a1a1a;
+    width: 100%;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    background-color: #cfcfcf;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #5e5d5d;
+    font-size: 12px;
+    text-align: start;
+}
+
+textarea {
+    height: 120px;
+    resize: none; /* Impede redimensionamento manual */
+}
+
+/* Botão estilizado */
+.contato2 button {
+    width: 100px;
+    margin-bottom: 12px; 
+    padding: 10px 20px;
+    background: none;
+    color: white;
+    border: 2px solid #00ccbb;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background-color 0.3s ease;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #008f89;
+}
+
+
+
+
+
+
+
+
+

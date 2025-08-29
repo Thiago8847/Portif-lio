@@ -77,7 +77,7 @@ header {
     align-items: center; 
 }
 .logo img {
-    height: 30px;
+    height: 35px;
     padding-right: 25px;
 }
 .nav {
@@ -91,10 +91,9 @@ header {
     display: flex;
     gap: 30px;
 }
-
 .menu a {
     font-family: "Poppins", serif;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 200;
     color: white;
     text-decoration: none;
@@ -165,6 +164,8 @@ header {
     color: var(--cor5);
 }
 .img-inicio img {
+    padding-top: 70px;
+    padding-right: 40px;
     justify-content: center;
     width: 400px;
     transition: transform 0.9s ease-in-out;
@@ -192,6 +193,13 @@ header {
   margin: 0 auto 40px;
 }
 /* Cards de projetos */
+
+.card .miniico img {
+    width: 20px;
+    height: auto;
+    margin-right: 8px;
+}
+
 .cards-projetos {
   display: flex;
   justify-content: space-between;
@@ -199,42 +207,54 @@ header {
   flex-wrap: wrap;
 }
 .card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  flex: 1;
-  min-width: 280px;
-  max-width: 350px;
-  padding: 20px;
-  transition: transform 0.3s;
+    background-color: rgba(44, 114, 142, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    padding: 20px;
+    transition: transform 0.3s;
+    position: relative;
+    padding-bottom: 60px;
 }
 .card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
+    box-shadow: 0 0px 12px var(--cor3);
 }
 .card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
 }
 .card h3 {
   font-size: 1.2rem;
-  color: var(--cor1);
+  color: var(--cor3);
   margin-bottom: 10px;
 }
 .card p {
   font-size: 0.95rem;
-  color: #444;
+  color: var(--cor5);
   margin-bottom: 15px;
 }
 .btn-card {
-  display: inline-block;
-  padding: 8px 16px;
-  background: var(--cor1);
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 0.9rem;
-  transition: background 0.3s;
+    
+    position: absolute; /* ADICIONE ISSO */
+    bottom: 10px;       /* distancia do botão à base do card */
+    left: 50%;          /* centraliza horizontalmente */
+    transform: translateX(-50%); /* centraliza exatamente */
+    display: inline-block;
+    padding: 10px 20px;
+    background: none;
+    color: var(--cor5);
+    text-decoration: none;
+    border: 2px solid var(--cor3);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 20px;
+    width: fit-content;
 }
 .btn-card:hover {
   background: var(--cor3);
@@ -319,47 +339,52 @@ header {
 /* ------------------------------------------------------------------- */
 
 /* Página sobre */
-#sobre {
-    margin: 0 auto;
+#sobre {  
     display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center; 
-    gap: 20px;
-    padding: 40px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 60px 10%;
+    border-radius: 12px;            
 }
 .caixa1 {
-    width: 50%; 
-    height: auto; 
+    flex: 2;
 }
-.caixa2 {
-    text-align: center;
-    width: 35%; 
-    height: auto; 
-}
-#sobre .caixa1 h1 {
-    color: var(--cor3);
+.caixa1 h1, .caixa1 h2 {
     font-family: "Poppins", serif;
-    font-size: 70px;
-    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--cor3);
 }
-#sobre .caixa1 p {
+.caixa1 p {
     text-align: left;
     padding: 5px;
     font-family: "Poppins", serif;
     font-size: 15px;
     font-weight: 400;
 }
-#sobre .caixa1 p span{
+.caixa1 strong, 
+.caixa1 span {
     color: var(--cor2);
     font-weight: bold;
 }
-#sobre .caixa2 img{
-    margin-top: 60px;
-    width: 350px;
-    height: auto;
-    max-width: 100%; 
+.caixa2 {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
 }
+#foto-sobre {
+    max-width: 250px;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#foto-sobre:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
 
 /* ------------------------------------------------------------------- */
 
@@ -401,9 +426,12 @@ header {
     color: var(--cor5);
     margin: 5px;
     font-family: "Poppins", serif;
-    font-size: 15px;
-    font-weight: 200;
+    font-size: 16px;
+    font-weight: 300;
     line-height: 1;
+    padding: 5PX;
+    line-height: 1.7; 
+ 
 }
 #contato .contato1 h2 {
     padding-top: 30px;
@@ -424,7 +452,7 @@ header {
     color: var(--cor5);
     font-family: "Poppins", serif;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 300;
     text-align: left;
     padding-top: 20px;
     padding-bottom: 30px;
@@ -432,27 +460,39 @@ header {
 form {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-}
-input, textarea {
-    padding-left: 10px;
-    border: none; /* Remove a borda */
-    outline: none; /* Remove o contorno ao focar no campo */
-    color: #1a1a1a;
+    gap: 9px;
     width: 100%;
-    font-size: 18px;
-    font-family: "Poppins", sans-serif;
-    background-color: #cfcfcf;
+    max-width: 700px;
+    margin: 0 auto;
 }
-input::placeholder, textarea::placeholder {
-    color: #5e5d5d;
-    font-size: 15px;
-    
+input,textarea {
+    padding: 8px 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    color: #1a1a1a;
+    background-color: #f0f0f0;
+    transition: border 0.3s, box-shadow 0.3s;
+    width: 100%;
+}
+input::placeholder,textarea::placeholder {
+    color: #7a7a7a;
+    font-size: 0.95rem;
+}
+input:focus,
+textarea:focus {
+    border-color: var(--cor3);
+    box-shadow: 0 0 6px rgba(0, 119, 255, 0.3);
+    background-color: #fff;
 }
 textarea {
-    height: 120px;
-    resize: none; /* Impede redimensionamento manual */
+    min-height: 150px;
+    resize: vertical;
+    line-height: 1.5;
 }
+
 /* Botão estilizado */
 .contato2 button {
     width: 100px;
@@ -598,9 +638,31 @@ button:hover {
     color: var(--cor5);
 }
 .img-inicio img {
+    padding-right: 0px;
+    padding-top: 50px;
     justify-content: center;
-    width: 300px;
+    width: 200px;
     transition: transform 0.9s ease-in-out;
+}
+/*--------------------------CONTATO*/
+#contato {
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+#contato .contato1,  #contato .contato2 {
+    width: 100%; 
+    height: auto;
+}
+.contato2 h1, .contato2 h2 {
+    padding-top: 40px;
+    text-align: center;
+}
+form {
+    max-width: 80%;  
+    margin: 0 auto;  
 }
 }
 
@@ -699,4 +761,44 @@ header {
 .social-icons a:hover {
     color: var(--cor3);
 }
+
+/*--------------------------SOBRE*/
+#sobre {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 5%;
 }
+.caixa1 {
+    order: 2;
+}
+.caixa2 {
+    order: 1;
+    margin-bottom: 15px;
+    padding-top: 30px;
+}
+#foto-sobre {
+    max-width: 180px;
+}
+
+/*--------------------------CONTATO*/
+#contato {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+#contato .contato1,  #contato .contato2 {
+    width: 100%; 
+    height: auto;
+}
+.contato2 h1, .contato2 h2 {
+    padding-top: 40px;
+    text-align: center;
+}
+form {
+    max-width: 80%;  
+    margin: 0 auto;  
+}
+
+
+}
+
