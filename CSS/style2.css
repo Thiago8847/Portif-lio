@@ -193,3 +193,34 @@ header {
     grid-template-columns: 1fr;
   }
 }
+
+@media screen and (max-width: 500px) {
+
+/*--------------------------CABEÇALHO*/
+header {
+    padding: 10px 10px;
+    background-color: var(--cor1);
+    color: white;
+}
+.logo{
+    display: flex;
+    align-items: center; 
+}
+.logo img {
+    height: 20px;
+    padding-right: 15px;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+.menu a {
+    font-family: "Poppins", serif;
+    font-size: 12px;
+    font-weight: 200;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;    
+}
+}

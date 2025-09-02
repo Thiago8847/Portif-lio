@@ -177,7 +177,7 @@ header {
 #projetos {
     background-image: url(/IMG/fundo.png);
     filter: brightness(1.4) contrast(1.1);
-    padding: 60px 10%;
+    padding: 30px 10%;
     background-color: #000000;
     text-align: center;
 }
