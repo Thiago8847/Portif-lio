@@ -8,21 +8,23 @@ Bem-vindo ao **ThiagoAssis.dev**, meu portfólio pessoal como desenvolvedor Fron
 
 O projeto está organizado da seguinte forma:
 
+```
 ThiagoAssis.dev/
 │
-├─ HTML/ # Páginas do portfólio
-│ ├─ projetos.html
-│ ├─ portifolio.html
-│ ├─ bascaCep.html
-│ └─ ...
+├─ HTML/                 # Páginas do portfólio
+│   ├─ projetos.html
+│   ├─ portifolio.html
+│   ├─ buscaCep.html
+│   └─ ...
 │
 ├─ CSS/
-│ └─ style.css # Estilos do site
+│   └─ style.css          # Estilos do site
 │
 ├─ JS/
-│ └─ script.js # Scripts para interatividade
+│   └─ script.js          # Scripts para interatividade
 │
-├─ IMG/ # Imagens e ícones usados
+├─ IMG/                   # Imagens e ícones usados
 ├─ DOWNLOADS/
-│ └─ Curriculo.pdf # Curriculum Vitae
-└─ index.html # Página principal
+│   └─ Curriculo.pdf      # Curriculum Vitae
+└─ index.html             # Página principal
+```
